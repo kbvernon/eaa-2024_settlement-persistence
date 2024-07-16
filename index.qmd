@@ -1,0 +1,36 @@
+---
+format: 
+  revealjs: 
+    theme: [default, custom.scss]
+    auto-stretch: false
+    slide-number: true
+execute:
+  echo: false
+engine: knitr
+---
+
+## The network ecology of settlement persistence {.title-left background-image="figures/desert-banner.png" background-size="contain"}
+
+::: title-top
+K. Blake Vernon, Simon Brewer, Brian Codding, and Scott Ortman
+:::
+
+::: title-bottom
+`r Sys.Date()`
+
+[{{< fa brands github >}} kbvernon/koln-2024_settlement-persistence](https://github.com/kbvernon/koln-2024_settlement-persistence){style="padding-left: 0.3rem;"}
+:::
+
+## {.center}
+
+[Question]{.menu-title style="display:none"}
+
+::: {style="font-size:2.5em; text-align: center;"}
+Why do some human settlements last longer than others?
+:::
+
+## Inspiration
+
+:::{#fig-shoutout}
+[![](figures/shout-out.png){width=80% style="margin: 1.5em 0, 0.5em 0;"}](https://doi.org/10.1016/j.jasrep.2024.104515)
+:::

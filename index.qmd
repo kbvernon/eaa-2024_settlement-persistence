@@ -1,36 +1,248 @@
 ---
-format: 
-  revealjs: 
+title: The network ecology of settlement persistence
+author: 
+  - name: K. Blake Vernon    
+    orcid: 0000-0003-0098-5092
+    affiliations: 
+      - id: colorado
+        name: Center for Collaborative Synthesis in Archaeology (CU)
+        url: https://ibsweb.colorado.edu/archaeology/
+  - name: Simon Brewer    
+    orcid: 0000-0002-6810-1911
+    affiliations: 
+      - id: ess
+        name: School of Environment, Society, and Sustainability (UU)
+        url: https://ess.utah.edu/
+  - name: Brian Codding    
+    orcid: 0000-0001-7977-8568
+    affiliations: 
+      - id: utah
+        name: Department of Anthropology (UU)
+        url: https://anthro.utah.edu/
+  - name: Scott Ortman    
+    orcid: 0000-0003-0709-5287
+    affiliations: 
+      - ref: colorado
+date: last-modified
+github: kbvernon/eaa-2024_settlement-persistence
+format:
+  desert-revealjs:
     theme: [default, custom.scss]
-    auto-stretch: false
-    slide-number: true
-execute:
-  echo: false
-engine: knitr
+title-image: 
+  source: figures/pueblo.svg
+  alt: "A pueblo in front of a city in the desert."
 ---
 
-## The network ecology of settlement persistence {.title-left background-image="figures/desert-banner.png" background-size="contain"}
-
-::: title-top
-K. Blake Vernon, Simon Brewer, Brian Codding, and Scott Ortman
-:::
-
-::: title-bottom
-`r Sys.Date()`
-
-[{{< fa brands github >}} kbvernon/koln-2024_settlement-persistence](https://github.com/kbvernon/koln-2024_settlement-persistence){style="padding-left: 0.3rem;"}
-:::
-
-## {.center}
-
-[Question]{.menu-title style="display:none"}
-
-::: {style="font-size:2.5em; text-align: center;"}
-Why do some human settlements last longer than others?
-:::
+## Why do some human settlements last longer than others? {.center .slide-dark-cerulean}
 
 ## Inspiration
 
 :::{#fig-shoutout}
-[![](figures/shout-out.png){width=80% style="margin: 1.5em 0, 0.5em 0;"}](https://doi.org/10.1016/j.jasrep.2024.104515)
+[![](figures/shout-out.png){style="margin: 1.5em 0, 0.5em 0;"}](https://doi.org/10.1016/j.jasrep.2024.104515)
 :::
+
+## Is persistence an inherent good?
+
+**No**, its value derives from the contribution it makes to human life.
+
+::: {#fig-value-of-persistence}
+![](figures/value-of-persistence.svg){width=75% style="margin-top: 2em;"}
+:::
+
+## The Lord Baron model
+
+:::{#fig-renfrew-paper}
+[![](figures/renfrew-paper.png){width=80% style="margin: 1.5em 0, 0.5em 0;"}](https://doi.org/10.1016/B978-0-12-586050-5.50033-6)
+:::
+
+## The Lord Baron model {data-visibility="uncounted"}
+
+Goal is to maximize individual utility, $F$:
+
+$$F(R) = P(R) + S(R)$$
+
+:::::: {.r-stack}
+::: {.fragment fragment-index=0 .fade-out style="position: absolute; left: 0;"}
+where
+
+$P$ = Primary production function  
+$S$ = Social production function  
+$R$ = Transport costs or "distance"
+:::
+::: {.fragment fragment-index=0 .fade-in-then-out}
+::: {#fig-renfrew-model}
+![](figures/renfrew-model.svg){style="margin-top: 0.5em;"}
+:::
+:::
+::: {.fragment fragment-index=1 .fade-in style="position: absolute; left: 0;"}
+This anticipates many of the ideas that have come to be known as **settlement scaling theory** ([Ortman et al 2014](https://doi.org/10.1371/journal.pone.0087902)).
+:::
+::::::
+
+## Settlement dynamics
+
+Lord Baron assumes that settlement is a dynamic system with multiple, discontinuous equilibrium states.
+
+:::::: {style="width: 50%; margin: 1em auto 0 auto;"}
+::: {#fig-renfrew-disequilibrium}
+![](figures/renfrew-bifurcation.svg)
+:::
+::::::
+
+## Scaling effects
+
+$R$ is the per capita contribution of an individual to the "public good."  
+
+:::::: {style="width: 50%; margin: 1em auto 0 auto;"}
+::: {#fig-public-good}
+![](figures/public-good.svg)
+:::
+::::::
+
+## Collective Action Problem
+
+If you can't get buy-in, the whole system unravels.
+
+:::::: {style="width: 50%; margin: 1em auto 0 auto;"}
+::: {#fig-cap}
+![](figures/cap.svg)
+:::
+::::::
+
+## But, what about persistence?!
+
+:::::: {.r-stack}
+::: {.fragment fragment-index=0 .fade-out style="position: absolute; left: 0;"}
+Read it from left to right, starting with the village equilibrium state.
+
+:::::: {style="width: 50%; margin: 1em auto 0 auto;"}
+::: {#fig-renfrew-disequilibrium2}
+![](figures/renfrew-bifurcation.svg)
+:::
+::::::
+:::
+::: {.fragment fragment-index=0 .fade-in style="position: absolute; left: 0;"}
+"Agglomerations, once established, are usually able to survive even under conditions that would not cause them to form in the first place" ([Fujita, Krugman, Venables 1999](https://doi.org/10.7551/mitpress/6389.001.0001)).
+:::
+::::::
+
+## Expectations
+
+1. Agglomerated systems should persist longer than dispersed systems.  
+2. Everyone should be "better off" in an agglomeration system, whether they are 
+    - profiting off that system or  
+    - trapped in it, having no viable alternative.
+
+## {background-image="figures/overview-map.png" background-size="contain"}
+
+[Study area]{.menu-title style="display:none"}
+
+## Unit of analysis {.center style="text-align: center;"}
+
+:::::: {style="width: 60%; margin: 1em auto 0 auto;"}
+::: {#fig-unit-of-analysis}
+![](figures/unit-of-analysis.svg)
+:::
+::::::
+
+## Population
+
+Estimated for each grid cell using UPDA ([Ortman 2016](https://doi.org/10.1007/s10816-014-9227-6)).
+
+:::::: {style="width: 80%; margin: 1em auto 0 auto;"}
+::: {#fig-population}
+![](figures/population-reconstruction.png)
+:::
+::::::
+
+## Duration
+
+Derived by applying threshold to population reconstruction.  
+
+::: {#fig-duration style="margin-top: 1em;"}
+![](figures/settlement-duration.png)
+:::
+
+## Agglomeration
+
+Based on population distribution within travel time $t$ of a focal grid cell.
+
+::: {#fig-agglomeration style="margin-top: 1em;"}
+![](figures/agglomeration.png){width=70% style="margin: 1em 0 0.75em 0;"}
+:::
+
+## Climate
+
+Reconstructed using paleoCAR ([Bocinsky and Kohler 2014](https://doi.org/10.1038/ncomms6618)).  
+
+::: {#fig-climate style="margin-top: 1em;"}
+![](figures/climate-reconstruction.png){width=65% style="margin: 0.75em 0 0.75em 0;"}
+:::
+
+## Survival analysis
+
+What explains the amount of time $T$ that passes before a settlement is abandoned? 
+
+$$
+\begin{aligned}
+T &\sim f(t)\\
+S(t) &= Pr(T > t) = \int_{t}^{\infty} f(u)du\\
+h(t) &= \frac{f(t)}{S(t)}
+\end{aligned}
+$$
+
+with  
+
+- $S(t)$ being the survival function and  
+- $h(t)$ the hazard rate: the number of settlements you can expect to be abandoned at $t$ *given that they persisted up to* $t$. 
+
+## Discrete-time proportional hazards
+
+Can't assume that $T$ is continuous, so we use discrete time and model the hazard rate using ordinary logistic regression.
+
+$$
+\begin{aligned}
+E(T) &= h(t)\\
+logit(h(t)) &= \alpha + \beta X + \epsilon
+\end{aligned}
+$$  
+
+$X$: maximum agglomeration, maximum population, Maize GDD per time step, PPT per time step, initial start date, and region.  
+
+To handle spatial autocorrelation, the model also includes Moran Eigenvector Maps (MEMs).
+
+## Hazard rate
+
+For illustration purposes.
+
+::: {#fig-hazard style="margin-top: 1em;"}
+![](figures/hazard-rate.png){width=70% style="margin: 1em 0 0.75em 0;"}
+:::
+
+## Lingering issues
+
+Probably in order of importance...
+
+1. Need to build population reconstruction using deep learning ([Reese 2021](https://doi.org/10.1016/j.jas.2021.105413)).  
+2. A better way of measuring agglomeration.  
+2. Need a climate reconstruction that is better able to capture spatial variance.  
+4. Might need to include lags.
+
+## Acknowledgments
+
+:::::: {.columns}
+::: {.column width="45%"}
+- Matt Peeples
+- Peter Yaworsky
+- Weston McCool
+- Josh Watts
+- The `{extendr}` crew
+:::
+::: {.column width="55%"}
+::: {#fig-hazard}
+![](figures/acknowledgments.png)
+:::
+:::
+::::::
+
+

@@ -7,12 +7,15 @@
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.545">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.3">
 
-  <title>index</title>
+  <meta name="author" content="K. Blake Vernon">
+  <meta name="author" content="Simon Brewer">
+  <meta name="author" content="Brian Codding">
+  <meta name="author" content="Scott Ortman">
+  <meta name="dcterms.date" content="2024-08-30">
+  <title>The network ecology of settlement persistence</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -326,36 +329,369 @@
   <div class="reveal">
     <div class="slides">
 
-
-<section id="the-network-ecology-of-settlement-persistence" class="slide level2 title-left" data-background-image="figures/desert-banner.png" data-background-size="contain">
-<h2>The network ecology of settlement persistence</h2>
-<div class="title-top">
-<p>K. Blake Vernon, Simon Brewer, Brian Codding, and Scott Ortman</p>
-</div>
-<div class="title-bottom">
-<p>2024-07-16</p>
-<p><a href="https://github.com/kbvernon/koln-2024_settlement-persistence" style="padding-left: 0.3rem;"><i class="fa-brands fa-github" aria-label="github"></i> kbvernon/koln-2024_settlement-persistence</a></p>
-</div>
+<section id="title-slide" class="quarto-title-block center">
+  <div class="desert-title-block">
+    <div class="desert-title-grid">
+      <div class="desert-title">
+        <h1 class="title">The network ecology of settlement persistence</h1>
+            
+      </div>
+      <div class="desert-authors">
+        <div class="quarto-title-authors">
+                    <div class="quarto-title-author">
+          <div class="quarto-title-author-name">
+            
+            K. Blake Vernon
+             
+                          <a href="https://orcid.org/0000-0003-0098-5092" class="quarto-title-author-orcid"> 
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+              </a>
+                      </div>
+                                                <p class="quarto-title-affiliation">
+                                <a href="https://ibsweb.colorado.edu/archaeology/">
+                                Center for Collaborative Synthesis in Archaeology (CU)
+                                </a>
+                              </p>
+                                  </div>
+                    <div class="quarto-title-author">
+          <div class="quarto-title-author-name">
+            
+            Simon Brewer
+             
+                          <a href="https://orcid.org/0000-0002-6810-1911" class="quarto-title-author-orcid"> 
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+              </a>
+                      </div>
+                                                <p class="quarto-title-affiliation">
+                                <a href="https://ess.utah.edu/">
+                                School of Environment, Society, and Sustainability (UU)
+                                </a>
+                              </p>
+                                  </div>
+                    <div class="quarto-title-author">
+          <div class="quarto-title-author-name">
+            
+            Brian Codding
+             
+                          <a href="https://orcid.org/0000-0001-7977-8568" class="quarto-title-author-orcid"> 
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+              </a>
+                      </div>
+                                                <p class="quarto-title-affiliation">
+                                <a href="https://anthro.utah.edu/">
+                                Department of Anthropology (UU)
+                                </a>
+                              </p>
+                                  </div>
+                    <div class="quarto-title-author">
+          <div class="quarto-title-author-name">
+            
+            Scott Ortman
+             
+                          <a href="https://orcid.org/0000-0003-0709-5287" class="quarto-title-author-orcid"> 
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+              </a>
+                      </div>
+                                                <p class="quarto-title-affiliation">
+                                <a href="https://ibsweb.colorado.edu/archaeology/">
+                                Center for Collaborative Synthesis in Archaeology (CU)
+                                </a>
+                              </p>
+                                  </div>
+                  </div>
+      </div>
+      <div class="desert-details">
+        <div class="details">
+        <p class="date">2024-08-30</p>
+                    <p>
+              <a href="https://github.com/kbvernon/eaa-2024_settlement-persistence">
+                <span class="fa6-brands--github"></span> kbvernon/eaa-2024_settlement-persistence
+              </a>
+            </p>
+                </div>    
+      </div>    
+    </div>
+        <figure class="desert-figure">
+      <img class="desert-image" src="figures/pueblo.svg" alt="A pueblo in front of a city in the desert.">
+    </figure>    
+      </div>  
 </section>
-<section id="section" class="slide level2 center">
-<h2></h2>
-<p><span class="menu-title" style="display:none">Question</span></p>
-<div style="font-size:2.5em; text-align: center;">
-<p>Why do some human settlements last longer than others?</p>
-</div>
+<section id="why-do-some-human-settlements-last-longer-than-others" class="slide level2 center slide-dark-cerulean">
+<h2>Why do some human settlements last longer than others?</h2>
 </section>
 <section id="inspiration" class="slide level2">
 <h2>Inspiration</h2>
-<div id="fig-shoutout" class="quarto-figure quarto-figure-center quarto-float" style="margin: 1.5em 0, 0.5em 0;">
+<div id="fig-shoutout" class="quarto-float quarto-figure quarto-figure-center" style="margin: 1.5em 0, 0.5em 0;">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-shoutout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><a href="https://doi.org/10.1016/j.jasrep.2024.104515"><img data-src="figures/shout-out.png" style="margin: 1.5em 0, 0.5em 0;;width:80.0%"></a></p>
+<p><a href="https://doi.org/10.1016/j.jasrep.2024.104515"><img data-src="figures/shout-out.png" style="margin: 1.5em 0, 0.5em 0;"></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-shoutout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1
 </figcaption>
 </figure>
 </div>
+</section>
+<section id="is-persistence-an-inherent-good" class="slide level2">
+<h2>Is persistence an inherent good?</h2>
+<p><strong>No</strong>, its value derives from the contribution it makes to human life.</p>
+
+<img data-src="figures/value-of-persistence.svg" style="margin-top: 2em;;width:75.0%" class="r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;2
+</p></section>
+<section id="the-lord-baron-model" class="slide level2">
+<h2>The Lord Baron model</h2>
+<div id="fig-renfrew-paper" class="quarto-float quarto-figure quarto-figure-center" style="margin: 1.5em 0, 0.5em 0;">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-renfrew-paper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://doi.org/10.1016/B978-0-12-586050-5.50033-6"><img data-src="figures/renfrew-paper.png" style="margin: 1.5em 0, 0.5em 0;;width:80.0%"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-renfrew-paper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-lord-baron-model-1" class="slide level2" data-visibility="uncounted">
+<h2>The Lord Baron model</h2>
+<p>Goal is to maximize individual utility, <span class="math inline">\(F\)</span>:</p>
+<p><span class="math display">\[F(R) = P(R) + S(R)\]</span></p>
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="0" style="position: absolute; left: 0;">
+<p>where</p>
+<p><span class="math inline">\(P\)</span> = Primary production function<br>
+<span class="math inline">\(S\)</span> = Social production function<br>
+<span class="math inline">\(R\)</span> = Transport costs or “distance”</p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="0">
+<div id="fig-renfrew-model" class="quarto-float quarto-figure quarto-figure-center" style="margin-top: 0.5em;">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-renfrew-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/renfrew-model.svg" style="margin-top: 0.5em;">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-renfrew-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute; left: 0;">
+<p>This anticipates many of the ideas that have come to be known as <strong>settlement scaling theory</strong> (<a href="https://doi.org/10.1371/journal.pone.0087902">Ortman et al 2014</a>).</p>
+</div>
+</div>
+</section>
+<section id="settlement-dynamics" class="slide level2">
+<h2>Settlement dynamics</h2>
+<p>Lord Baron assumes that settlement is a dynamic system with multiple, discontinuous equilibrium states.</p>
+<div style="width: 50%; margin: 1em auto 0 auto;">
+<div id="fig-renfrew-disequilibrium" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-renfrew-disequilibrium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/renfrew-bifurcation.svg">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-renfrew-disequilibrium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="scaling-effects" class="slide level2">
+<h2>Scaling effects</h2>
+<p><span class="math inline">\(R\)</span> is the per capita contribution of an individual to the “public good.”</p>
+<div style="width: 50%; margin: 1em auto 0 auto;">
+<div id="fig-public-good" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-public-good-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/public-good.svg">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-public-good-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="collective-action-problem" class="slide level2">
+<h2>Collective Action Problem</h2>
+<p>If you can’t get buy-in, the whole system unravels.</p>
+<div style="width: 50%; margin: 1em auto 0 auto;">
+<div id="fig-cap" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-cap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/cap.svg">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-cap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="but-what-about-persistence" class="slide level2">
+<h2>But, what about persistence?!</h2>
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="0" style="position: absolute; left: 0;">
+<p>Read it from left to right, starting with the village equilibrium state.</p>
+<div style="width: 50%; margin: 1em auto 0 auto;">
+<div id="fig-renfrew-disequilibrium2" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-renfrew-disequilibrium2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/renfrew-bifurcation.svg">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-renfrew-disequilibrium2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="0" style="position: absolute; left: 0;">
+<p>“Agglomerations, once established, are usually able to survive even under conditions that would not cause them to form in the first place” (<a href="https://doi.org/10.7551/mitpress/6389.001.0001">Fujita, Krugman, Venables 1999</a>).</p>
+</div>
+</div>
+</section>
+<section id="expectations" class="slide level2">
+<h2>Expectations</h2>
+<ol type="1">
+<li>Agglomerated systems should persist longer than dispersed systems.<br>
+</li>
+<li>Everyone should be “better off” in an agglomeration system, whether they are
+<ul>
+<li>profiting off that system or<br>
+</li>
+<li>trapped in it, having no viable alternative.</li>
+</ul></li>
+</ol>
+</section>
+<section id="section" class="slide level2" data-background-image="figures/overview-map.png" data-background-size="contain">
+<h2></h2>
+<p><span class="menu-title" style="display:none">Study area</span></p>
+</section>
+<section id="unit-of-analysis" class="slide level2 center" style="text-align: center;">
+<h2>Unit of analysis</h2>
+<div style="width: 60%; margin: 1em auto 0 auto;">
+<div id="fig-unit-of-analysis" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-unit-of-analysis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/unit-of-analysis.svg">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-unit-of-analysis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="population" class="slide level2">
+<h2>Population</h2>
+<p>Estimated for each grid cell using UPDA (<a href="https://doi.org/10.1007/s10816-014-9227-6">Ortman 2016</a>).</p>
+<div style="width: 80%; margin: 1em auto 0 auto;">
+<div id="fig-population" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-population-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/population-reconstruction.png">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-population-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="duration" class="slide level2">
+<h2>Duration</h2>
+<p>Derived by applying threshold to population reconstruction.</p>
+
+<img data-src="figures/settlement-duration.png" class="r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;11
+</p></section>
+<section id="agglomeration" class="slide level2">
+<h2>Agglomeration</h2>
+<p>Based on population distribution within travel time <span class="math inline">\(t\)</span> of a focal grid cell.</p>
+
+<img data-src="figures/agglomeration.png" style="margin: 1em 0 0.75em 0;;width:70.0%" class="r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;12
+</p></section>
+<section id="climate" class="slide level2">
+<h2>Climate</h2>
+<p>Reconstructed using paleoCAR (<a href="https://doi.org/10.1038/ncomms6618">Bocinsky and Kohler 2014</a>).</p>
+
+<img data-src="figures/climate-reconstruction.png" style="margin: 0.75em 0 0.75em 0;;width:65.0%" class="r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;13
+</p></section>
+<section id="survival-analysis" class="slide level2">
+<h2>Survival analysis</h2>
+<p>What explains the amount of time <span class="math inline">\(T\)</span> that passes before a settlement is abandoned?</p>
+<p><span class="math display">\[
+\begin{aligned}
+T &amp;\sim f(t)\\
+S(t) &amp;= Pr(T &gt; t) = \int_{t}^{\infty} f(u)du\\
+h(t) &amp;= \frac{f(t)}{S(t)}
+\end{aligned}
+\]</span></p>
+<p>with</p>
+<ul>
+<li><span class="math inline">\(S(t)\)</span> being the survival function and<br>
+</li>
+<li><span class="math inline">\(h(t)\)</span> the hazard rate: the number of settlements you can expect to be abandoned at <span class="math inline">\(t\)</span> <em>given that they persisted up to</em> <span class="math inline">\(t\)</span>.</li>
+</ul>
+</section>
+<section id="discrete-time-proportional-hazards" class="slide level2">
+<h2>Discrete-time proportional hazards</h2>
+<p>Can’t assume that <span class="math inline">\(T\)</span> is continuous, so we use discrete time and model the hazard rate using ordinary logistic regression.</p>
+<p><span class="math display">\[
+\begin{aligned}
+E(T) &amp;= h(t)\\
+logit(h(t)) &amp;= \alpha + \beta X + \epsilon
+\end{aligned}
+\]</span></p>
+<p><span class="math inline">\(X\)</span>: maximum agglomeration, maximum population, Maize GDD per time step, PPT per time step, initial start date, and region.</p>
+<p>To handle spatial autocorrelation, the model also includes Moran Eigenvector Maps (MEMs).</p>
+</section>
+<section id="hazard-rate" class="slide level2">
+<h2>Hazard rate</h2>
+<p>For illustration purposes.</p>
+
+<img data-src="figures/hazard-rate.png" style="margin: 1em 0 0.75em 0;;width:70.0%" class="r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;14
+</p></section>
+<section id="lingering-issues" class="slide level2">
+<h2>Lingering issues</h2>
+<p>Probably in order of importance…</p>
+<ol type="1">
+<li>Need to build population reconstruction using deep learning (<a href="https://doi.org/10.1016/j.jas.2021.105413">Reese 2021</a>).<br>
+</li>
+<li>A better way of measuring agglomeration.<br>
+</li>
+<li>Need a climate reconstruction that is better able to capture spatial variance.<br>
+</li>
+<li>Might need to include lags.</li>
+</ol>
+</section>
+<section id="acknowledgments" class="slide level2">
+<h2>Acknowledgments</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li>Matt Peeples</li>
+<li>Peter Yaworsky</li>
+<li>Weston McCool</li>
+<li>Josh Watts</li>
+<li>The <code>{extendr}</code> crew</li>
+</ul>
+</div><div class="column" style="width:55%;">
+<div id="fig-hazard" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-hazard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/acknowledgments.png">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-hazard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15
+</figcaption>
+</figure>
+</div>
+</div></div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
@@ -572,44 +908,6 @@ Figure&nbsp;1
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
@@ -642,18 +940,7 @@ Figure&nbsp;1
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -685,7 +972,47 @@ Figure&nbsp;1
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -722,7 +1049,11 @@ Figure&nbsp;1
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

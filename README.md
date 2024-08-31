@@ -8,7 +8,7 @@
 
 Repository for my presentation at the European Association of Archaeologists [30th Annual Meeting](https://www.e-a-a.org/eaa2024) in Rome. Slides made using [quarto](https://quarto.org/) and R. 
 
-__Slides:__ <https://kbvernon.github.io/eaa_2024-settlement_persistence>
+__Slides:__ <https://kbvernon.github.io/eaa-2024_settlement-persistence>
 
 You can press "F" to enter Full Screen mode and "S" to enter Speaker view. The hamburger button ☰ at the bottom left of the screen opens a menu that allows you to easily navigate the presentation.  
 
@@ -18,7 +18,7 @@ __Title:__ "The network ecology of settlement persistence"
 
 __Authors:__ K. Blake Vernon and Scott Ortman
 
-__Abstract__  
+This is a fork of [kbvernon/koln-2024_settlement-persistence](https://github.com/kbvernon/koln-2024_settlement-persistence).
 
 
 

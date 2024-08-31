@@ -16,7 +16,7 @@ __Session:__ "Evolutionary Approaches to Archaeological Questions: Human Behavio
 
 __Title:__ "The network ecology of settlement persistence"
 
-__Authors:__ K. Blake Vernon and Scott Ortman
+__Authors:__ K. Blake Vernon, Simon Brewer, Brian Codding, and Scott Ortman
 
 This is a fork of [kbvernon/koln-2024_settlement-persistence](https://github.com/kbvernon/koln-2024_settlement-persistence).
 
